@@ -3,4 +3,5 @@
 Para rodar:
 `npm install`
 `npm run dev`
-Open with live server
+`npx http-server .`
+`npm run serve`
