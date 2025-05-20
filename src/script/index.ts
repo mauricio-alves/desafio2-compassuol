@@ -7,6 +7,7 @@ async function renderPage() {
   const app = document.getElementById("app");
 
   if (app) {
+    const header = await loadComponent("/src/components/header/header.html");
     const banner = await loadComponent("/src/components/banner/banner.html");
     const shop = await loadComponent("/src/components/shop/shop.html");
     const services = await loadComponent(
@@ -14,7 +15,21 @@ async function renderPage() {
     );
     const aboutUs = await loadComponent("/src/components/aboutUs/aboutUs.html");
 
-    app.innerHTML = `${banner}${shop}${services}${aboutUs}`;
+    app.innerHTML = `${header}${banner}${shop}${services}${aboutUs}`;
+
+    const navbar = document.querySelector(".navbar");
+    const bannerSection = document.querySelector(".banner");
+    if (navbar && bannerSection) {
+      window.addEventListener("scroll", () => {
+        const bannerHeight = bannerSection.getBoundingClientRect().height;
+
+        if (window.scrollY > bannerHeight - 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    }
   }
 }
 
