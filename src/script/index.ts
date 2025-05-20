@@ -12,8 +12,9 @@ async function renderPage() {
     const services = await loadComponent(
       "/src/components/services/services.html"
     );
+    const aboutUs = await loadComponent("/src/components/aboutUs/aboutUs.html");
 
-    app.innerHTML = `${banner}${shop}${services}`;
+    app.innerHTML = `${banner}${shop}${services}${aboutUs}`;
   }
 }
 

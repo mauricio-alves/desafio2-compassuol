@@ -48,7 +48,7 @@
   font-size: 17px;
   font-family: var(--font-formative-semi-bold);
   background-color: var(--color-gray);
-  background-image: url("../../assets/icons/search.png");
+  background-image: url("../../assets/icons/search.svg");
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: 10px center;
@@ -109,7 +109,7 @@
 .product-overlay {
   position: absolute;
   inset: 0;
-  padding: 20px;
+  padding: 20px 10px;
   background: var(--color-background);
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -131,6 +131,7 @@
   align-items: center;
   width: 100%;
   margin-top: 10px;
+  padding: 0 10px;
 }
 
 .product-overlay-header img {
