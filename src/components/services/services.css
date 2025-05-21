@@ -19,12 +19,6 @@
   margin: 0;
 }
 
-.section-title {
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 3px 0;
-}
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

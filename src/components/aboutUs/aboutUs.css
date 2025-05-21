@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin: 60px 0 40px 0;
+  margin: 62px 0 40px 0;
   border-bottom: 2px solid var(--color-gray);
 }
 
@@ -17,11 +17,6 @@
   font-family: var(--font-formative-medium);
   font-size: 35px;
   margin: 0;
-}
-
-.section-title {
-  margin-bottom: 20px;
-  text-align: center;
   padding: 3px 0;
 }
 
