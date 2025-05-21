@@ -1,0 +1,70 @@
+.our-team {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 80px;
+  margin-bottom: 30px;
+}
+
+.our-team-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 57px 0 45px 0;
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.our-team-header h2 {
+  font-family: var(--font-formative-medium);
+  font-size: 35px;
+  margin: 0;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 3px 0;
+}
+
+.our-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 20px 30px;
+}
+
+.our-team-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 9px;
+}
+
+.our-team-card h4 {
+  font-family: var(--font-formative-semi-bold);
+  font-size: 20px;
+  margin: 8px 0 4px;
+  color: rgba(16, 24, 40, 1);
+}
+
+.our-team-card p {
+  font-family: var(--font-formative-regular);
+  color: rgba(16, 24, 40, 0.5);
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: #98a2b3;
+  transition: fill 0.3s;
+}
+
+.social-icons svg:hover {
+  fill: #3b82f6;
+}

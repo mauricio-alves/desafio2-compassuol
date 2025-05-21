@@ -14,8 +14,9 @@ async function renderPage() {
       "/src/components/services/services.html"
     );
     const aboutUs = await loadComponent("/src/components/aboutUs/aboutUs.html");
+    const ourTeam = await loadComponent("/src/components/ourTeam/ourTeam.html");
 
-    app.innerHTML = `${header}${banner}${shop}${services}${aboutUs}`;
+    app.innerHTML = `${header}${banner}${shop}${services}${aboutUs}${ourTeam}`;
 
     const navbar = document.querySelector(".navbar");
     const bannerSection = document.querySelector(".banner");

@@ -1,28 +1,28 @@
 @font-face {
   font-family: "Formative Regular";
   src: url("../assets/fonts/FormativeTrial-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Formative Bold";
-  src: url("../assets/fonts/FormativeTrial-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Formative Semi Bold";
-  src: url("../assets/fonts/FormativeTrial-Semi-Bold.otf") format("opentype");
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Formative Medium";
   src: url("../assets/fonts/FormativeTrial-Medium.otf") format("opentype");
-  font-weight: bold;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formative Semi Bold";
+  src: url("../assets/fonts/FormativeTrial-Semi-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formative Bold";
+  src: url("../assets/fonts/FormativeTrial-Bold.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
 }
 
