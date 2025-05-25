@@ -140,3 +140,59 @@
 .service-card .overlay button:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 390px) {
+  .services {
+    padding: 0;
+    margin: 14px;
+  }
+
+  .services-header svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .services-header {
+    margin: 28px 3px 23px;
+  }
+
+  .services-header h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 175px);
+    grid-template-areas:
+      "a b"
+      "d e"
+      "c c";
+    margin: 0;
+    padding: 0;
+    gap: 7px;
+  }
+
+  .service-card {
+    border-radius: 5px;
+  }
+
+  .service-card span {
+    font-size: 25px;
+  }
+
+  .service-card .overlay h3 {
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  .service-card .overlay p {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+
+  .service-card .overlay button {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+}

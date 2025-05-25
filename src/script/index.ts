@@ -4,13 +4,15 @@ async function loadComponent(path: string): Promise<string> {
 }
 
 async function renderPage() {
-  const app = document.getElementById("app");
+  const app = document.getElementById("app") as HTMLElement;
 
   if (app) {
     const header = await loadComponent("/src/components/header/header.html");
     const banner = await loadComponent("/src/components/banner/banner.html");
     const shop = await loadComponent("/src/components/shop/shop.html");
-    const services = await loadComponent("/src/components/services/services.html");
+    const services = await loadComponent(
+      "/src/components/services/services.html"
+    );
     const aboutUs = await loadComponent("/src/components/aboutUs/aboutUs.html");
     const ourTeam = await loadComponent("/src/components/ourTeam/ourTeam.html");
     const blog = await loadComponent("/src/components/blog/blog.html");
@@ -29,8 +31,9 @@ async function renderPage() {
     ${footer}
     `;
 
-    const navbar = document.querySelector(".navbar");
-    const bannerSection = document.querySelector(".banner");
+    const navbar = document.querySelector(".navbar") as HTMLElement;
+    const bannerSection = document.querySelector(".banner") as HTMLElement;
+
     if (navbar && bannerSection) {
       window.addEventListener("scroll", () => {
         const bannerHeight = bannerSection.getBoundingClientRect().height;
@@ -40,6 +43,20 @@ async function renderPage() {
         } else {
           navbar.classList.remove("scrolled");
         }
+      });
+    }
+
+    const openModal = document.querySelector("#hbIcon") as HTMLElement;
+    const navModal = document.querySelector("#modal") as HTMLElement;
+    const closeModal = document.querySelector("#closeModal svg") as HTMLElement;
+
+    if (openModal && navModal && closeModal) {
+      openModal.addEventListener("click", () => {
+        navModal.style.display = "flex";
+      });
+
+      closeModal.addEventListener("click", () => {
+        navModal.style.display = "none";
       });
     }
   }

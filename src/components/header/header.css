@@ -64,3 +64,98 @@
   color: var(--color-white);
   font-family: var(--font-formative-semi-bold);
 }
+
+.hbIcon {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.modal,
+.mobileNavbar {
+  display: none;
+}
+
+@media (max-width: 390px) {
+  .hbIcon,
+  .closeIcon,
+  .mobileNavbar {
+    display: block;
+  }
+
+  .mobileNavbar-content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    padding: 28px 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobileNavbar-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .navbar.scrolled::before {
+    opacity: 1;
+  }
+
+  .mobileNavbar-content div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .modal {
+    background-color: var(--color-secondary);
+    opacity: 0.9;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+  }
+
+  .modal .nav-links li {
+    list-style: none;
+    padding: 5px 0;
+  }
+
+  .modal .nav-links li a,
+  .mobileNavbar-content a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .modal .nav-links li a:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-white);
+  }
+
+  .navbar {
+    display: none;
+  }
+}
