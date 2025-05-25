@@ -63,3 +63,44 @@
   border-radius: 1rem;
   object-fit: cover;
 }
+
+@media (max-width: 390px) {
+  .about-us-images {
+    display: none;
+  }
+
+  .about-us {
+    padding: 0;
+    margin: 46px 14px 0;
+  }
+
+  .about-us-header svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .about-us-header {
+    margin: 28px 3px 23px;
+  }
+
+  .about-us-header h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .about-us-content {
+    display: flex;
+    padding: 0 4px;
+    border: none;
+    margin: 0;
+  }
+
+  .about-us-text {
+    font-size: 15px;
+  }
+
+  .about-us-text p {
+    margin-bottom: 16px;
+  }
+}

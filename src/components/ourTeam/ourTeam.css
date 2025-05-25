@@ -63,3 +63,59 @@
 .social-icons svg:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 390px) {
+  .our-team {
+    padding: 40px 16px;
+    margin: 0;
+  }
+
+  .our-team-header svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .our-team-header {
+    margin: 20px 3px;
+  }
+
+  .our-team-header h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .our-team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .our-team-card img {
+    margin-bottom: 0;
+  }
+
+  .our-team-card h4 {
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .our-team-card p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .our-team-card .social-icons {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .our-team-card .social-icons svg {
+    width: 15px;
+    height: 15px;
+  }
+}

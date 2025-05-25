@@ -86,3 +86,57 @@
 .video-container img {
   width: 100%;
 }
+
+@media (max-width: 390px) {
+  .blog {
+    padding: 10px 16px 40px;
+    margin: 0;
+  }
+
+  .blog-header svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .blog-header {
+    margin: 20px 3px;
+  }
+
+  .blog-header h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .blog-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .blog-subtitle {
+    font-size: 20px;
+    margin: 20px 0 10px;
+  }
+
+  .blog-content {
+    padding-top: 10px;
+  }
+
+  .blog-text p {
+    font-size: 15px;
+  }
+
+  .blog-text p:nth-child(2) {
+    padding-top: 10px;
+  }
+
+  .read-more {
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .blog-image {
+    display: none;
+  }
+}

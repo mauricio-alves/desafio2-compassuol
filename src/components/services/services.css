@@ -159,6 +159,7 @@
   .services-header h2 {
     font-size: 20px;
     margin: 0;
+    font-weight: 500;
   }
 
   .services-grid {
