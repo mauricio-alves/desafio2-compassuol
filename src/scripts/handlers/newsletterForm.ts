@@ -9,12 +9,12 @@ export function handleNewsletterForm() {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (!email) {
-      alert("Email is required.");
+      alert("Por favor, preencha o campo de email.");
       return;
     }
 
     if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address.");
+      alert("Por favor, insira um email válido.");
       return;
     }
 

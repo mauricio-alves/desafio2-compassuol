@@ -17,12 +17,12 @@ export function handleContactForm() {
     const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
 
     if (!email) {
-      alert("Email is required.");
+      alert("Por favor, preencha o campo de email.");
       return;
     }
 
     if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address.");
+      alert("Por favor, insira um email válido.");
       return;
     }
 
@@ -34,6 +34,6 @@ export function handleContactForm() {
       policyAccepted: policyChecked,
     };
 
-    console.log("Dados prontos para envio:", formData);
+    console.log("formData:", formData);
   });
 }

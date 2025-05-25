@@ -5,6 +5,7 @@ import { handleDropdown } from "../handlers/dropdown.js";
 import { handleProductCart } from "../handlers/productCart.js";
 import { handleContactForm } from "../handlers/contactForm.js";
 import { handleNewsletterForm } from "../handlers/newsletterForm.js";
+import { handlePlayBtn } from "../handlers/playBtn.js";
 
 export async function renderPage() {
   const app = document.getElementById("app") as HTMLElement;
@@ -51,4 +52,5 @@ export async function renderPage() {
   handleProductCart();
   handleContactForm();
   handleNewsletterForm();
+  handlePlayBtn();
 }
