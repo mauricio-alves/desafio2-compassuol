@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es6",
     "module": "es6",
-    "moduleResolution": "bundler",
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true

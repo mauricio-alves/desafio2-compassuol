@@ -23,15 +23,15 @@ export async function renderPage() {
     contact,
     footer,
   ] = await Promise.all([
-    loadComponent("/src/components/header/header.html"),
-    loadComponent("/src/components/banner/banner.html"),
-    loadComponent("/src/components/shop/shop.html"),
-    loadComponent("/src/components/services/services.html"),
-    loadComponent("/src/components/aboutUs/aboutUs.html"),
-    loadComponent("/src/components/ourTeam/ourTeam.html"),
-    loadComponent("/src/components/blog/blog.html"),
-    loadComponent("/src/components/contact/contact.html"),
-    loadComponent("/src/components/footer/footer.html"),
+    loadComponent("src/components/header/header.html"),
+    loadComponent("src/components/banner/banner.html"),
+    loadComponent("src/components/shop/shop.html"),
+    loadComponent("src/components/services/services.html"),
+    loadComponent("src/components/aboutUs/aboutUs.html"),
+    loadComponent("src/components/ourTeam/ourTeam.html"),
+    loadComponent("src/components/blog/blog.html"),
+    loadComponent("src/components/contact/contact.html"),
+    loadComponent("src/components/footer/footer.html"),
   ]);
 
   app.innerHTML = `
