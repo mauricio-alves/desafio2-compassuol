@@ -1,0 +1,163 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 80px;
+  margin-bottom: 33px;
+}
+
+.blog-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 58px 0 45px 0;
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.blog-header h2 {
+  font-family: var(--font-formative-medium);
+  font-size: 35px;
+  margin: 0;
+  padding: 3px 0;
+}
+
+.blog-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-top: 17px;
+}
+
+.blog-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.blog-title {
+  font-family: var(--font-formative-semi-bold);
+  font-size: 36px;
+  letter-spacing: -0.72px;
+  margin-bottom: 43px;
+}
+
+.blog-subtitle {
+  font-family: var(--font-formative-semi-bold);
+  font-size: 24px;
+  margin: 30px 0 15px;
+}
+
+.blog-text p {
+  font-family: var(--font-formative-regular);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.blog-text p:nth-child(2) {
+  padding-top: 30px;
+  border-top: 2px solid var(--color-gray);
+}
+
+.blog-text a {
+  text-decoration: underline;
+}
+
+.read-more {
+  padding: 15px 25px;
+  background: var(--color-gradient);
+  font-family: var(--font-formative-regular);
+  font-size: 20px;
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 47px;
+}
+
+.read-more:hover {
+  transform: scale(1.1);
+}
+
+.blog-image {
+  flex: 1;
+  min-width: 300px;
+  padding-top: 3px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.custom-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 970px) {
+  .blog-image {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .blog {
+    padding: 10px 16px 40px;
+    margin: 0;
+  }
+
+  .blog-header svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .blog-header {
+    margin: 20px 3px;
+  }
+
+  .blog-header h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .blog-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .blog-subtitle {
+    font-size: 20px;
+    margin: 20px 0 10px;
+  }
+
+  .blog-content {
+    padding-top: 10px;
+  }
+
+  .blog-text p {
+    font-size: 15px;
+  }
+
+  .blog-text p:nth-child(2) {
+    padding-top: 10px;
+  }
+
+  .read-more {
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: 12px;
+  }
+}

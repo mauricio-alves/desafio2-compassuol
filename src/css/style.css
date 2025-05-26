@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Formative Regular";
+  src: url("../assets/fonts/FormativeTrial-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formative Medium";
+  src: url("../assets/fonts/FormativeTrial-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formative Semi Bold";
+  src: url("../assets/fonts/FormativeTrial-Semi-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formative Bold";
+  src: url("../assets/fonts/FormativeTrial-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --font-formative-regular: "Formative Regular", sans-serif;
+  --font-formative-bold: "Formative Bold", sans-serif;
+  --font-formative-semi-bold: "Formative Semi Bold", sans-serif;
+  --font-formative-medium: "Formative Medium", sans-serif;
+
+  --color-primary: #243961;
+  --color-secondary: #101828;
+  --color-white: #ffffff;
+  --color-gray: #f4f4f4;
+  --color-black: rgba(0, 0, 0, 0.7);
+  --color-background: rgba(16, 24, 40, 0.54);
+  --color-gradient: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+    --color-gradient-reverse: linear-gradient(
+    90deg,
+    var(--color-secondary) 0%,
+    var(--color-primary) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: var(--font-formative-regular);
+  color: var(--color-black);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
