@@ -55,7 +55,11 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
   opacity: 0.9;
   display: none;
   border-radius: 8px;
@@ -65,16 +69,31 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-menu a {
+.dropdown-menu a,
+.nav-links li a {
   display: flex;
   color: var(--color-white);
   padding: 4px 0;
   font-size: 14px;
   text-decoration: none;
+  position: relative;
 }
 
-.dropdown-menu a:hover {
-  text-decoration: underline;
+.dropdown-menu a::after,
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-white);
+  transition: width 0.3s;
+}
+
+.dropdown-menu a:hover::after,
+.nav-links li a:hover::after {
+  width: 100%;
 }
 
 .has-dropdown.open .dropdown-menu {
