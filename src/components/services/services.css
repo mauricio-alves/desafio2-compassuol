@@ -54,6 +54,7 @@
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .service-card .image-wrapper {

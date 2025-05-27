@@ -115,6 +115,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .product-card:hover .product-overlay {
