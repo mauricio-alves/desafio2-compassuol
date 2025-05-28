@@ -69,13 +69,16 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-menu a,
-.nav-links li a {
+.dropdown-menu a {
   display: flex;
   color: var(--color-white);
   padding: 4px 0;
   font-size: 14px;
   text-decoration: none;
+  position: relative;
+}
+
+.nav-links li a {
   position: relative;
 }
 
