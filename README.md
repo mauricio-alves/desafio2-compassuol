@@ -21,4 +21,7 @@ Obs.: É necessário ter o [Browser Sync](https://browsersync.io/) instalado par
 - Typescript;
 - Browser Sync.
 
-Caso queira ver a demonstração funcional, acesse esse link do [GitHub Pages](https://mauricio-alves.github.io/desafio2-compassuol/).
+## Demonstração
+- [GitHub Pages](https://mauricio-alves.github.io/desafio2-compassuol/).
+- [YouTube](https://youtu.be/kNVsUTrsewo).
+
